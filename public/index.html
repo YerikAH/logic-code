@@ -145,7 +145,7 @@
               </a>
             </div>
             <div class="person" data-aos="zoom-in" data-aos-duration="1500">
-              <img src="../assets/alex.png" alt="image" />
+              <img src="../assets/jhonny.png" alt="image" />
               <h3>Jhonny Sanes</h3>
               <p>
                 (Estudiante de ingeniería de software con inteligencia
@@ -172,12 +172,11 @@
               </a>
             </div>
             <div class="person" data-aos="zoom-in" data-aos-duration="2000">
-              <img
-                src="https://images.pexels.com/photos/1300402/pexels-photo-1300402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="image"
-              />
+              <img src="../assets/rubel.png" alt="image" />
               <h3>Rusbel Palacios</h3>
-              <p>(Estudiante de ingeniería de software)</p>
+              <p>
+                (Programador Full-Stack y estudiante de ingeniería de software)
+              </p>
               <a class="person__media" href="" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -213,13 +212,19 @@
       AOS.init();
       const ctx = document.getElementById("myChart");
       const ctx2 = document.getElementById("secondChart");
-      const labels = ["hola", "a", "f", "g", "t", "r", "j"];
+      const labels = [
+        "Calificaciones",
+        "Participación",
+        "Conversión",
+        "Verificación",
+        "Emociones",
+      ];
       const data = {
         labels: labels,
         datasets: [
           {
-            label: "My First Dataset",
-            data: [65, 59, 80, 81, 56, 55, 40],
+            label: "El problema",
+            data: [60, 20, 20, 10, 5],
             fill: false,
             borderColor: "#fff",
             tension: 0.1,
@@ -273,8 +278,8 @@
         labels: labels,
         datasets: [
           {
-            label: "My First Dataset",
-            data: [65, 59, 80, 81, 56, 55, 40],
+            label: "Nuestra solución",
+            data: [85, 75, 80, 81, 90],
             fill: false,
             borderColor: "#277eff",
             tension: 0.1,
