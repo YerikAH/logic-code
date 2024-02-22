@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --white: #fbfbfb;
+  --black: #030303;
+  --blue: #277eff;
+  --font-primary: "Lato", sans-serif;
+  --font-secondary: "Montserrat", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--black);
+}
+.hero__section {
+  padding: 1rem 2rem;
+  display: grid;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+.hero__content {
+  width: 100%;
+}
+.hero__content > * {
+  color: var(--white);
+  text-align: center;
+}
+.hero__content h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  letter-spacing: -3px;
+  font-family: var(--font-primary);
+}
+.hero__content p {
+  max-width: 720px;
+  font-size: 1rem;
+  width: 100%;
+  margin: 2rem auto 0 auto;
+  font-family: var(--font-secondary);
+}
+.solution__section {
+  display: grid;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 2rem;
+  place-items: center;
+}
+.solution__title,
+.solution__description {
+  width: 100%;
+}
+.solution__description {
+  margin-top: 5rem;
+}
+.solution__title li {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.solution__title p {
+  margin-top: 1rem;
+  line-height: 1.7rem;
+}
+.solution__section > * {
+  color: white;
+  font-family: var(--font-secondary);
+}
+.solution__description canvas {
+  width: 100%;
+}
+
+.logo__fixed {
+  position: fixed;
+  letter-spacing: -1px;
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--white);
+  left: 1rem;
+  bottom: 1rem;
+}
+.section__team {
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto 0 auto;
+}
+.section__team > * {
+  color: var(--white);
+  font-family: var(--font-secondary);
+}
+.section__team h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.section__team__text {
+  margin-top: 1rem;
+  line-height: 1.7rem;
+}
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 6rem;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.person {
+  max-width: 250px;
+  width: 100%;
+}
+.person img {
+  border-radius: 3rem;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.person h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.person p {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+.person__media {
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+  border-radius: 2rem;
+  margin: 1rem auto;
+  width: 3rem;
+  height: 3rem;
+  background-color: #fff1;
+  transition: 0.3s;
+}
+.person__media:hover {
+  background-color: #fff2;
+}
+.person__media > svg {
+  color: var(--white);
+}
+.section__presentation {
+  max-width: 1200px;
+  width: 100%;
+  margin: 5rem auto;
+  padding: 1rem 2rem;
+}
+.section__presentation > * {
+  color: var(--white);
+  font-family: var(--font-secondary);
+  text-align: center;
+}
+.section__presentation h2 {
+  font-size: 3rem;
+  width: 100%;
+  max-width: 720px;
+  margin: auto;
+  font-weight: 600;
+}
+.section__presentation p {
+  max-width: 720px;
+  width: 100%;
+  margin: 1rem auto 0 auto;
+  line-height: 1.7rem;
+}
+.section__presentation img {
+  height: 500px;
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+  border-radius: 2rem;
+  object-fit: cover;
+  margin-top: 4rem;
+  display: block;
+}
+footer {
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+.challenge__title {
+  background: -webkit-linear-gradient(
+    28deg,
+    rgba(39, 126, 255, 1) 14%,
+    rgba(100, 242, 198, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--blue);
+}
+@media (min-width: 720px) {
+  .solution__section {
+    grid-template-columns: 48% 48%;
+    gap: 4%;
+    height: 100vh;
+  }
+  .section__team {
+    height: 100vh;
+    margin-top: 0;
+  }
+  .section__presentation {
+    margin-top: 0;
+    height: 100vh;
+  }
+  .solution__description {
+    margin-top: 0;
+  }
+  footer {
+    visibility: visible;
+    opacity: 1;
+  }
+}

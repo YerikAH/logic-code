@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LogicCode</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <main>
+      <section class="hero__section" id="hero">
+        <div class="hero__content">
+          <h1>Logic<span class="challenge__title">Code</span></h1>
+          <p>
+            ¿Cómo podríamos ayudara los docentes a crear, aplicar y calificar en
+            forma rápida y segura evaluaciones enlínea utilizando tecnologías
+            emergentes?
+          </p>
+        </div>
+      </section>
+      <section class="solution__section">
+        <div
+          class="solution__title"
+          data-aos="fade-right"
+          data-aos-duration="3000"
+        >
+          <li>Solución</li>
+          <p>
+            Crearemos un sistema de exámenes innovador para ayudar a los
+            profesores. Tendrá un chatbot que crea preguntas personalizadas para
+            cada curso y responde dudas en tiempo real. También tendrá OCR para
+            convertir exámenes físicos en virtuales, calificación automatizada
+            con IA y visión artificial para verificar la identidad del alumno y
+            su participación.
+
+            <br />
+            <br />
+            Analizaremos datos para evaluar el rendimiento académico y
+            comprender las emociones y actitudes de los alumnos. Este sistema
+            integral hará que la evaluación sea más fácil, justa y precisa.
+          </p>
+        </div>
+        <div
+          class="solution__description"
+          data-aos="fade-left"
+          data-aos-duration="3000"
+        >
+          <canvas id="myChart"></canvas>
+          <br />
+          <br />
+          <canvas id="secondChart"></canvas>
+        </div>
+      </section>
+      <section
+        class="section__presentation"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+      >
+        <h2>
+          Propuesta de solución al reto
+          <span class="challenge__title">"Atipay"</span>
+        </h2>
+        <p>
+          Este proyecto es viable y de bajo costo gracias a la utilización de
+          bibliotecas y tecnologías avanzadas como visionjs, API de OpenIA,
+          React, NestJS, PHP y tesseract.js. Estamos comprometidos a
+          proporcionar soluciones tecnológicas que transformen la experiencia de
+          enseñanza y aprendizaje.
+        </p>
+        <img src="../assets/banner.jpg" alt="image" />
+      </section>
+      <section class="section__team">
+        <div class="section__team__center">
+          <h2>Desarrolladores</h2>
+          <p class="section__team__text">
+            Somos un equipo de desarrolladores y estudiantes con sólidos
+            conocimientos en ingeniería de software. Nuestra combinación única
+            de habilidades y nuestra perspectiva educativa nos posiciona para
+            abordar proyectos desafiantes en el ámbito del desarrollo de
+            software.
+          </p>
+          <div class="team">
+            <div class="person" data-aos="zoom-in" data-aos-duration="500">
+              <img src="../assets/harvey.png" alt="image" />
+              <h3>Harvey Vasquez</h3>
+              <p>
+                (Estudiante de ingeniería mecatrónica y software con
+                inteligencia artificial)
+              </p>
+              <a
+                class="person__media"
+                href="https://github.com/YerikAH"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-github"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="person" data-aos="zoom-in" data-aos-duration="1000">
+              <img src="../assets/alex.png" alt="image" />
+              <h3>Yonatan Ordoñez</h3>
+              <p>
+                (Estudiante de ingeniería de software con inteligencia
+                artificial)
+              </p>
+              <a
+                class="person__media"
+                href="https://github.com/Alexod24"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-github"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="person" data-aos="zoom-in" data-aos-duration="1500">
+              <img src="../assets/alex.png" alt="image" />
+              <h3>Jhonny Sanes</h3>
+              <p>
+                (Estudiante de ingeniería de software con inteligencia
+                artificial)
+              </p>
+              <a class="person__media" href="" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-github"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="person" data-aos="zoom-in" data-aos-duration="2000">
+              <img
+                src="https://images.pexels.com/photos/1300402/pexels-photo-1300402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="image"
+              />
+              <h3>Rusbel Palacios</h3>
+              <p>(Estudiante de ingeniería de software)</p>
+              <a class="person__media" href="" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-github"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <h2 class="logo__fixed">
+        Logic<span class="challenge__title">Code</span>
+      </h2>
+    </footer>
+    <script src="../src/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      AOS.init();
+      const ctx = document.getElementById("myChart");
+      const ctx2 = document.getElementById("secondChart");
+      const labels = ["hola", "a", "f", "g", "t", "r", "j"];
+      const data = {
+        labels: labels,
+        datasets: [
+          {
+            label: "My First Dataset",
+            data: [65, 59, 80, 81, 56, 55, 40],
+            fill: false,
+            borderColor: "#fff",
+            tension: 0.1,
+            borderWidth: 1,
+          },
+        ],
+      };
+      const config = {
+        type: "line",
+        data: data,
+        options: {
+          plugins: {
+            legend: {
+              labels: {
+                usePointStyle: true,
+              },
+            },
+          },
+          fill: false,
+          interaction: {
+            intersect: false,
+          },
+          radius: 0,
+          responsive: true,
+          scales: {
+            x: {
+              grid: {
+                color: "#242424",
+                borderColor: "#242424",
+                tickColor: "#242424",
+              },
+              border: {
+                color: "#242424",
+              },
+            },
+            y: {
+              grid: {
+                color: "#242424",
+                borderColor: "#242424",
+                tickColor: "#242424",
+              },
+              border: {
+                color: "#242424",
+              },
+            },
+          },
+        },
+      };
+
+      const data2 = {
+        labels: labels,
+        datasets: [
+          {
+            label: "My First Dataset",
+            data: [65, 59, 80, 81, 56, 55, 40],
+            fill: false,
+            borderColor: "#277eff",
+            tension: 0.1,
+            borderWidth: 1,
+          },
+        ],
+      };
+      const config2 = {
+        type: "line",
+        data: data2,
+        options: {
+          plugins: {
+            legend: {
+              labels: {
+                usePointStyle: true,
+              },
+            },
+          },
+          fill: false,
+          interaction: {
+            intersect: false,
+          },
+          radius: 0,
+          responsive: true,
+          scales: {
+            x: {
+              grid: {
+                color: "#242424",
+                borderColor: "#242424",
+                tickColor: "#242424",
+              },
+              border: {
+                color: "#242424",
+              },
+            },
+            y: {
+              grid: {
+                color: "#242424",
+                borderColor: "#242424",
+                tickColor: "#242424",
+              },
+              border: {
+                color: "#242424",
+              },
+            },
+          },
+        },
+      };
+
+      new Chart(ctx, config);
+      new Chart(ctx2, config2);
+    </script>
+  </body>
+</html>
